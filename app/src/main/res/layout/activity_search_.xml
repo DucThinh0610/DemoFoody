@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ducthinh.foody1.android.a14110191_luuducthinh_foody1.View.Search_Activity">
+    <LinearLayout
+        android:id="@+id/linearChungsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="93"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearTabsearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="86"
+            android:background="#CC1A00"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="100">
+                <ImageView
+                    android:layout_weight="47"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/search"/>
+                <EditText
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:textSize="10dp"
+                    android:hint="Tìm địa điểm dịch vụ"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:layout_weight="13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="40"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TP.HCM"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPager_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+
+            <TabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

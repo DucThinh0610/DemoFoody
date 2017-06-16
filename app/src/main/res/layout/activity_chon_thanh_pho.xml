@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context="ducthinh.foody1.android.a14110191_luuducthinh_foody1.View.Fragment.ChonThanhPho">
+    <LinearLayout
+        android:background="#CC0000"
+        android:layout_weight="18.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btncallback"
+            android:layout_weight="4.2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:text="Chọn Tỉnh/Thành phố"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_weight="1.6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btnchonxongtp"
+            android:background="#CC0000"
+            android:textSize="15dp"
+            android:text="Xong"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_weight="4.2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:weightSum="20"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="19"
+            android:weightSum="5">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đã chọn:"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#FF00"
+                android:text="null"
+                android:textSize="17dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:id="@+id/textViewTPDaChon"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewIDCity"/>
+        </LinearLayout>
+        <ListView
+            android:layout_weight="1"
+            android:textColor="@drawable/list_item_selected2"
+            android:choiceMode="singleChoice"
+            android:listSelector="@android:color/holo_green_light"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewChonTinhThanh"></ListView>
+
+    </LinearLayout>
+</LinearLayout>

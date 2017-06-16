@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c00"
+    android:orientation="vertical"
+    tools:context="ducthinh.foody1.android.a14110191_luuducthinh_foody1.WaitingScreen">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:src="@drawable/foody_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Version 1.0"
+            android:textColor="#FFF"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:indeterminateTint="#FFF"
+                android:id="@+id/pg_flash_screen"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                />
+            <TextView
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang tải..."
+                android:textColor="#FFF"
+                />
+        </LinearLayout>
+        <TextView
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DucThinh Production"
+            />
+    </LinearLayout>
+</FrameLayout>

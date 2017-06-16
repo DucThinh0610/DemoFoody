@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.5"
+    android:background="@drawable/blur"
+    tools:context="ducthinh.foody1.android.a14110191_luuducthinh_foody1.View.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageViewbacktomenu"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        app:srcCompat="@drawable/ic_arrow_back_white"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textSize="21dp"
+        android:id="@+id/textViewlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập Foody"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewbacktomenu"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.133" />
+
+    <Button
+        android:alpha="1"
+        android:textSize="18dp"
+        android:id="@+id/btnloginphone"
+        android:layout_width="353dp"
+        android:layout_height="45dp"
+        android:text="Đăng nhập với số điện thoại"
+        android:textAllCaps="false"
+        android:layout_marginTop="266dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlogin"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnloginemail"
+        android:layout_width="353dp"
+        android:layout_height="45dp"
+        android:text="Đăng nhập với email"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginphone"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView3"
+        android:layout_width="349dp"
+        android:layout_height="47dp"
+        android:text="Chúng tối sẽ không sử dụng thông tin của bạn với bất cứ mục đích nào khác."
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginemail" />
+
+    <Button
+        android:id="@+id/buttonregister"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:text="Đăng kí"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="55dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</android.support.constraint.ConstraintLayout>

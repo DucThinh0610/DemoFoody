@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ducthinh.foody1.android.a14110191_luuducthinh_foody1.View.MainActivity">
+    <LinearLayout
+        android:id="@+id/linearChung"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="93"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="86"
+            android:background="#CC1A00"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <Button
+                    android:id="@+id/btnFoody"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#CC1A00">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#CC1A00"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2sp"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/btnodau"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="-2dp"
+                        android:background="@drawable/custom_btn_odau"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="Ở đâu"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/btnangi"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/custom_btn_angi"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="Ăn gì"
+                        android:textSize="13dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/ic_them" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+        <!--<LinearLayout-->
+        <!--android:layout_weight="46.5"-->
+        <!--android:id="@+id/linearMenu"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:weightSum="5">-->
+        <!--<ImageButton-->
+
+        <!--android:background="@drawable/designbuttonmenu"-->
+        <!--android:src="@drawable/homeselected"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/btnmenuhome"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"/>-->
+        <!--<ImageButton-->
+
+        <!--android:background="@drawable/designbuttonmenu"-->
+        <!--android:src="@drawable/library"-->
+        <!--android:id="@+id/btnbosuutap"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"/>-->
+        <!--<ImageButton-->
+        <!--android:background="@drawable/designbuttonmenu"-->
+        <!--android:src="@drawable/search"-->
+        <!--android:id="@+id/btnsearch"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"/>-->
+        <!--<ImageButton-->
+        <!--android:background="@drawable/designbuttonmenu"-->
+        <!--android:src="@drawable/alarm"-->
+        <!--android:id="@+id/btnthongbao"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1" />-->
+        <!--<ImageButton-->
+        <!--android:background="@drawable/designbuttonmenu"-->
+        <!--android:src="@drawable/user"-->
+        <!--android:id="@+id/btnuser"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"/>-->
+
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

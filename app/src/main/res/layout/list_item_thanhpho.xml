@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="37dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@drawable/list_item_selected"
+            android:text="sdasd"
+            android:id="@+id/lblListItem"
+            android:layout_width="fill_parent"
+            android:layout_height="37dp"
+            android:textSize="13sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"></TextView>
+        <TextView
+            android:id="@+id/idPhuong"
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="bbbbb"/>
+    </LinearLayout>
+</LinearLayout>

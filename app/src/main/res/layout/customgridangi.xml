@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:weightSum="10"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="12dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageViewGridAG"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vietnam_country"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:id="@+id/textViewTenMonAnAG"
+            android:layout_weight="1.3"
+            android:gravity="center_vertical"
+            android:text="Ten mon an"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:id="@+id/textViewTenQuanAG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:maxLines="1"
+            android:text="ten quan an"
+            android:textSize="16dp" />
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:textSize="10dp"
+            android:id="@+id/textViewDiaChiAG"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="dia chi"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_thongtin"
+                android:layout_weight="8"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:paddingLeft="4dp"
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Cloud Smiley"
+                    android:textSize="13dp"
+                    android:typeface="monospace"
+                    android:maxLines="1"/>
+
+                <TextView
+                    android:paddingLeft="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="9/11/2016"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

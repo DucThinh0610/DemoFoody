@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.5"
+    android:background="@drawable/blur"
+    tools:context="ducthinh.foody1.android.a14110191_luuducthinh_foody1.View.EmailLogin">
+
+    <ImageView
+        android:id="@+id/btnbacklogine"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_white"
+        android:layout_marginStart="31dp" />
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textSize="21dp"
+        android:id="@+id/textView5"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
+        android:text="Đăng nhập"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnbacklogine"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:backgroundTint="#FFF"
+        android:textSize="18dp"
+        android:textColor="#FFF"
+        android:id="@+id/edituserlogin"
+        android:layout_width="325dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Tài khoản"
+        android:textColorHint="#FFF"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="161dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+
+        android:textSize="18dp"
+        android:textColor="#FFF"
+        android:backgroundTint="#FFF"
+        android:id="@+id/editpasslogin"
+        android:layout_width="326dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColorHint="#FFF"
+        android:hint="Mật khẩu"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/edituserlogin"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:id="@+id/loginemail"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:text="Đăng nhập"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="49dp"
+        app:layout_constraintTop_toBottomOf="@+id/editpasslogin"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/framelogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461">
+        <ProgressBar
+            android:id="@+id/progress_barlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_list_items"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

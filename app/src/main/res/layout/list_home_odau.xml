@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:weightSum="10">
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btnRate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8.5"
+                android:background="@drawable/rate"
+                android:gravity="center"
+                android:text="1.6"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp" />
+
+            <LinearLayout
+                android:paddingLeft="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.5"
+                android:weightSum="3">
+
+                <TextView
+                    android:paddingTop="6dp"
+                    android:maxLines="1"
+                    android:id="@+id/textViewFoodODau"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:text="Tengg"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6"
+                    android:weightSum="20"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textViewTenDuong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:textSize="10dp"
+                        android:maxLines="1"
+                        android:text="392 Lê sssssVăn Sỹ, P.2, Quận Tân Bình, TP.HCM"
+                        />
+                    <TextView
+                        android:id="@+id/textViewSoKM"
+                        android:gravity="center"
+                        android:layout_weight="17"
+                        android:layout_width="match_parent"
+                        android:text="6km"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            >
+            <ImageView
+                android:id="@+id/imageViewODau"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/vietnam_country"
+                android:scaleType="centerCrop"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ducthinh.foody1.android.a14110191_luuducthinh_foody1.View.Library_Activity">
+    <LinearLayout
+        android:id="@+id/linearChunglibrary"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="93"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearTablibrary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="86"
+            android:background="#CC1A00"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="#CC1A00">
+
+                <RadioGroup
+                    android:id="@+id/radioGrouplibrary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#CC1A00"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2sp"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/btndiadiem"
+                        android:layout_width="125dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="-2dp"
+                        android:background="@drawable/custom_btn_odau"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="Bộ sưu tập địa điểm"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/btnsuutapanh"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/custom_btn_angi"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="Bộ sưu tập ảnh"
+                        android:textSize="13dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPager_library"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager_library"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
